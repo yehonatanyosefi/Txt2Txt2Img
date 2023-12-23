@@ -1,39 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+for pre-processing prompts and using it to generate images, made a quick nextjs project to try it out, feel free to use, let me know if you like it, might make something bigger, it currently uses gpt3.5 for txt, and replicate for image generation
 
-## Getting Started
+Installation instructions:
+1. git clone this directory
+2. Add a ".env" file on root directory with those two keys:
+OPENAI_API_KEY=YOUR_API_KEY
+REPLICATE_API_TOKEN=YOUR_API_KEY
+3. Do "npm i" on the root directory, when it finished, you've installed everything
 
-First, run the development server:
+To run it each time write "npm run dev" and you'll see it on localhost:3000
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The apis are here: src/app/api/chat and  src/app/api/image
+You can edit the prompts on the chat api and api providers on both
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# ChefAI
-"# ChefAI" 
-"# Txt2Txt2Img" 
