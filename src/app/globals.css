@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 210 50% 96%; /* Soft blue background */
+		--foreground: 210 30% 20%; /* Deep blue for text */
+		--card: 210 50% 100%; /* Lighter card backgrounds */
+		--card-foreground: 210 30% 20%; /* Deep blue text on cards */
+		--popover: 210 50% 100%; /* Light popover background */
+		--popover-foreground: 210 30% 20%; /* Deep blue text on popovers */
+		--primary: 264 90% 52%; /* Vibrant purple for primary elements */
+		--primary-foreground: 0 0% 100%; /* White text on primary elements */
+		--secondary: 39 90% 50%; /* Warm orange for secondary elements */
+		--secondary-foreground: 0 0% 20%; /* Dark text on secondary elements */
+		--muted: 210 25% 88%; /* Muted light blue */
+		--muted-foreground: 210 30% 20%; /* Deep blue text on muted elements */
+		--accent: 171 70% 50%; /* Teal as an accent color */
+		--accent-foreground: 0 0% 20%; /* Dark text on accent elements */
+		--destructive: 358 79% 53%; /* Reddish color for caution */
+		--destructive-foreground: 0 0% 100%; /* White text on destructive elements */
+		--border: 210 25% 80%; /* Soft borders for subtlety */
+		--input: 210 50% 100%; /* Inputs with a light appearance */
+		--ring: 264 90% 52%; /* Focus ring matching the primary color */
+		--radius: 0.375rem; /* Modern, slightly rounded borders */
+	}
+
+	.dark {
+		--background: 210 30% 15%; /* Dark blue for dark mode */
+		--foreground: 210 50% 95%; /* Light text for contrast */
+		--card: 210 30% 25%; /* Darker cards in dark mode */
+		--card-foreground: 210 50% 95%; /* Light text on dark cards */
+		--popover: 210 30% 25%; /* Dark popovers */
+		--popover-foreground: 210 50% 95%; /* Light text on dark popovers */
+		--primary: 264 70% 60%; /* Brighter purple in dark mode */
+		--primary-foreground: 0 0% 100%; /* White text on primary elements */
+		--secondary: 39 70% 60%; /* Brighter orange in dark mode */
+		--secondary-foreground: 0 0% 95%; /* Light text on secondary elements */
+		--muted: 210 20% 35%; /* Darker muted blue for dark mode */
+		--muted-foreground: 210 50% 95%; /* Light text on dark muted elements */
+		--accent: 171 70% 60%; /* Brighter teal in dark mode */
+		--accent-foreground: 0 0% 95%; /* Light text on dark accent elements */
+		--destructive: 358 79% 60%; /* Brighter red in dark mode */
+		--destructive-foreground: 0 0% 100%; /* White text on destructive elements */
+		--border: 210 25% 35%; /* Darker borders in dark mode */
+		--input: 210 30% 25%; /* Darker inputs */
+		--ring: 264 70% 60%; /* Focus ring in a brighter purple */
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+@keyframes open-eye {
+	50% {
+		transform: scaleY(0);
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+@keyframes close-eye {
+	50% {
+		transform: scaleY(1);
+	}
+	100% {
+		transform: scaleY(0);
+	}
+}
+
+/* enable smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+/* default scrollbar styling to be mac-like */
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgb(213, 213, 219);
+	border: 1px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(99, 111, 133);
+}
+
+Body {
+	color: rgb(51, 51, 51);
+}
